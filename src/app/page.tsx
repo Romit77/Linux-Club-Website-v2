@@ -1,9 +1,12 @@
 import React from "react";
+import Navbar from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
 
 export default function page() {
   return (
     <div>
-      <h1>Landing Page</h1>
+      <Navbar />
+      <Hero />
     </div>
   );
 }
