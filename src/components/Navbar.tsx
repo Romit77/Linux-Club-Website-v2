@@ -41,10 +41,10 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <li className="p-4 cursor-pointer font-semibold">Home</li>
-        <li className="p-4 cursor-pointer font-semibold">Events</li>
-        <li className="p-4 cursor-pointer font-semibold">Team</li>
-        <li className="p-4 cursor-pointer font-semibold">Contact</li>
+        <li className="p-4 cursor-pointer font-semibold text-xl">Home</li>
+        <li className="p-4 cursor-pointer font-semibold text-xl">Events</li>
+        <li className="p-4 cursor-pointer font-semibold text-xl">Team</li>
+        <li className="p-4 cursor-pointer font-semibold text-xl">Contact</li>
       </motion.ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
