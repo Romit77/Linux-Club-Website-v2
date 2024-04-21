@@ -16,16 +16,16 @@ export function Navbar() {
           <span className="text-lg font-bold">Linux Club </span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6">
-          <Link className="text-sm font-bold hover:underline" href="/Home">
+          <Link className="text-sm font-bold hover:underline" href="/">
             Home
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="#">
+          <Link className="text-sm font-bold hover:underline" href="/Events">
             Events
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="#">
+          <Link className="text-sm font-bold hover:underline" href="/Team">
             Team
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="#">
+          <Link className="text-sm font-bold hover:underline" href="/Contact">
             Contact
           </Link>
         </nav>

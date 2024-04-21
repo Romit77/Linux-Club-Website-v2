@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Vortex } from "./ui/vortex";
 import { motion } from "framer-motion";
-import { Cards } from "./Cards";
+import { Cards } from "./component/Cards";
 
 export function Hero() {
   return (

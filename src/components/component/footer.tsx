@@ -39,31 +39,26 @@ export function Footer() {
         <nav className="flex flex-wrap items-center justify-center gap-4 text-sm font-medium text-gray-600 dark:text-gray-400">
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/"
           >
             Home
           </Link>
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/Events"
           >
-            About
+            Events
           </Link>
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/Team"
           >
-            Products
+            Team
           </Link>
+
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
-          >
-            Pricing
-          </Link>
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/Contact"
           >
             Contact
           </Link>
