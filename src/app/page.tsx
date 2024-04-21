@@ -14,5 +14,3 @@ export default function page() {
     </div>
   );
 }
-
-// shad cn test

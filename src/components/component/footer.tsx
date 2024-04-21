@@ -53,13 +53,25 @@ export function Footer() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Link aria-label="LinkedIn" href="#">
+          <Link
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/company/linux-club-vitb/"
+            target="_blank"
+          >
             <LinkedinIcon className="h-5 w-5 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" />
           </Link>
-          <Link aria-label="Instagram" href="#">
+          <Link
+            aria-label="Instagram"
+            href="https://www.instagram.com/linuxvitb/?igsh=MXhscjBjMHVzb2Nncg%3D%3D"
+            target="_blank"
+          >
             <InstagramIcon className="h-5 w-5 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" />
           </Link>
-          <Link aria-label="GitHub" href="#">
+          <Link
+            aria-label="GitHub"
+            href="https://github.com/Linux-Club-VITB"
+            target="_blank"
+          >
             <GithubIcon className="h-5 w-5 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50" />
           </Link>
         </div>
