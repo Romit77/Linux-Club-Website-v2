@@ -3,7 +3,13 @@ import Image from "next/image";
 
 export function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black text-white p-2">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 text-gray-200 p-2 bg-transparent"
+      style={{
+        background: "transparent",
+        backdropFilter: "blur(5px)",
+      }}
+    >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 ">
         <Link className="flex items-center gap-2" href="#">
           <Image
