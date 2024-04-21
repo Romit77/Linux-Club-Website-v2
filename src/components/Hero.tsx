@@ -2,6 +2,7 @@
 import * as React from "react";
 import { Vortex } from "./ui/vortex";
 import { motion } from "framer-motion";
+import { Cards } from "./component/Cards";
 
 export function Hero() {
   return (
@@ -38,7 +39,10 @@ export function Hero() {
         </div> */}
         </Vortex>
       </div>
-      <div className="text-center font-semibold text-4xl">Why Linux Club</div>
+      <div className="text-center font-semibold text-4xl">
+        Why Linux Club
+        <Cards />
+      </div>
     </>
   );
 }
