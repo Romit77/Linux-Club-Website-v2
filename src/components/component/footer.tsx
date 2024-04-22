@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-black py-8 md:py-12">
-      <div className="container flex flex-col items-center justify-between gap-6 px-4 md:flex-row md:gap-0">
-        <Link className="flex items-center gap-2" href="#">
+    <footer className="w-full bg-black py-8 md:py-12 ">
+      <div className="container flex flex-col items-center justify-between gap-6 px-4 md:flex-row md:gap-0 mx-auto">
+        <Link className="flex items-center gap-2" href="/">
           <Image
             alt="Logo"
             className="h-8 w-8"
@@ -47,7 +47,7 @@ export function Footer() {
           </Link>
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/join"
           >
             Join us
           </Link>
@@ -76,8 +76,10 @@ export function Footer() {
           </Link>
         </div>
       </div>
-      <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400">
-        © 2024 Linux Club. All rights reserved.
+      <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400 mx-[50px]">
+        <span className="sm:ml-[45px] mx-auto">
+          © 2024 Linux Club. All rights reserved.
+        </span>
       </div>
     </footer>
   );

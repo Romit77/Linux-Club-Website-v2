@@ -1,11 +1,10 @@
 import React from "react";
+import { Members } from "@/components/component/Members";
 
-function Team() {
+export default function Team() {
   return (
     <div>
-      <h1>team</h1>
+      <Members />
     </div>
   );
 }
-
-export default Team;

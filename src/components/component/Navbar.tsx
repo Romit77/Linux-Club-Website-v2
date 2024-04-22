@@ -19,19 +19,31 @@ export function Navbar() {
             src="/club.png"
             width={50}
           />
-          <span className="text-lg font-bold">Linux Club </span>
+          <span className="text-xl font-bold ">Linux Club </span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6">
-          <Link className="text-sm font-bold hover:underline" href="/">
+          <Link
+            className="text-md font-bold hover:underline hover:text-purple-500"
+            href="/"
+          >
             Home
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="/Events">
+          <Link
+            className="text-md font-bold hover:underline hover:text-purple-500 "
+            href="/Events"
+          >
             Events
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="/Team">
+          <Link
+            className="text-md font-bold hover:underline hover:text-purple-500 "
+            href="/Team"
+          >
             Team
           </Link>
-          <Link className="text-sm font-bold hover:underline" href="/Contact">
+          <Link
+            className="text-md font-bold hover:underline  hover:text-purple-500"
+            href="/Contact"
+          >
             Contact
           </Link>
         </nav>

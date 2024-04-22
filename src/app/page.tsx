@@ -1,9 +1,9 @@
 import React from "react";
-import { Footer } from "@/components/component/footer";
 import { Hero } from "@/components/Hero";
-import { Navbar } from "@/components/component/Navbar";
 import { PoweredBy } from "@/components/component/powered-by";
 import WhyClub from "@/components/component/WhyClub";
+import { Navbar } from "@/components/component/Navbar";
+import { Footer } from "@/components/component/footer";
 
 export default function page() {
   return (
