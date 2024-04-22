@@ -74,17 +74,17 @@ export function Members() {
           </div>
           <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12">
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
+                  height="144"
                   src="/p.png"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
@@ -95,107 +95,170 @@ export function Members() {
               </div>
             </div>
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
+                  height="144"
                   src="/vp.jpg"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
-                <h3 className="font-semibold">Bob White</h3>
+                <h3 className="font-semibold">Mansi Bakshi</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Engineering Lead
+                  Product Manager
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
+                  height="144"
                   src="/sec.png"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
-                <h3 className="font-semibold">Eve Green</h3>
+                <h3 className="font-semibold">Mansi Bakshi</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  UX Designer
+                  Product Manager
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
-                  src="/placeholder.svg"
+                  height="144"
+                  src="/pr.png"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
-                <h3 className="font-semibold">Charlie Brown</h3>
+                <h3 className="font-semibold">Mansi Bakshi</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Frontend Developer
+                  Product Manager
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
-                  src="/placeholder.svg"
+                  height="144"
+                  src="/sm.png"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
-                <h3 className="font-semibold">Samantha Grey</h3>
+                <h3 className="font-semibold">Mansi Bakshi</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Marketing Manager
+                  Product Manager
                 </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-start space-y-2">
-              <div className="rounded-full overflow-hidden w-24 h-24 border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
                 <Image
                   alt="@shadcn"
                   className="rounded-full object-cover"
-                  height="96"
-                  src="/placeholder.svg"
+                  height="144"
+                  src="/web.png"
                   style={{
-                    aspectRatio: "96/96",
+                    aspectRatio: "144/144",
                     objectFit: "cover",
                   }}
-                  width="96"
+                  width="144"
                 />
               </div>
               <div className="space-y-1 text-sm">
-                <h3 className="font-semibold">Oliver Orange</h3>
+                <h3 className="font-semibold">Mansi Bakshi</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Mobile Developer
+                  Product Manager
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start space-y-2">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+                <Image
+                  alt="@shadcn"
+                  className="rounded-full object-cover"
+                  height="144"
+                  src="/p.png"
+                  style={{
+                    aspectRatio: "144/144",
+                    objectFit: "cover",
+                  }}
+                  width="144"
+                />
+              </div>
+              <div className="space-y-1 text-sm">
+                <h3 className="font-semibold">Mansi Bakshi</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Product Manager
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start space-y-2">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+                <Image
+                  alt="@shadcn"
+                  className="rounded-full object-cover"
+                  height="144"
+                  src="/p.png"
+                  style={{
+                    aspectRatio: "144/144",
+                    objectFit: "cover",
+                  }}
+                  width="144"
+                />
+              </div>
+              <div className="space-y-1 text-sm">
+                <h3 className="font-semibold">Mansi Bakshi</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Product Manager
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-start space-y-2">
+              <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+                <Image
+                  alt="@shadcn"
+                  className="rounded-full object-cover"
+                  height="144"
+                  src="/p.png"
+                  style={{
+                    aspectRatio: "144/144",
+                    objectFit: "cover",
+                  }}
+                  width="144"
+                />
+              </div>
+              <div className="space-y-1 text-sm">
+                <h3 className="font-semibold">Mansi Bakshi</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  Product Manager
                 </p>
               </div>
             </div>
