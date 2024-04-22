@@ -19,7 +19,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <span className="">Linux Club VIT Bhopal</span>
+            <span className='text-gradient'>Linux Club VIT Bhopal</span>
           </motion.h2>
           <motion.p
             className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center"

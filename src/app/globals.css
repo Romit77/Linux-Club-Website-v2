@@ -14,6 +14,22 @@
   }
 }
 
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+  #f1e6ff 0.89%,    /* Light purple */
+  #d8b4ff 17.23%,   /* Medium purple */
+  #bd80ff 42.04%,   /* Dark purple */
+  #a040ff 55.12%,   /* Deep purple */
+  #862eff 71.54%,   /* Very deep purple */
+  #5100ff 100%      /* Rich purple */
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
