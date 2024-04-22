@@ -47,7 +47,7 @@ export function Footer() {
           </Link>
           <Link
             className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="#"
+            href="/join"
           >
             Join us
           </Link>
