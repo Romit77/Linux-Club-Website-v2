@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Members() {
   return (
-    <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative  ">
+    <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative  mt-10 ">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
       <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">
