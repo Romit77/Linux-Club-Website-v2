@@ -3,7 +3,6 @@ import Grid from "../ui/Grid";
 export function Members() {
   return (
     <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative  ">
-      {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
 
       <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">
@@ -62,7 +61,7 @@ export function Members() {
           </div>
         </div>
       </div>
-      <section className="w-full py-5 md:py-24 lg:py-32">
+      <section className="w-full py-5 md:py-24 lg:py-10">
         <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl p-5">
