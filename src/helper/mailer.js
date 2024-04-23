@@ -18,11 +18,12 @@ export const sendMail = async({email , message})=>{
         const info = await transporter.sendMail({
             from:{
               name:'Linux Club',
-              address: process.env.EMAIL,
+              address: email,
             },
-            to: email,
-            subject: 'Message from my website',
-            text: message ,
+            to: process.env.EMAIL,
+            subject: 'Doubt from the student',
+            text: `From: ${email}\n\n${message}`,
+            
             });
   } catch (error) {
       console.log("Check the helper function" ,error);

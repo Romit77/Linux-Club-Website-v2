@@ -21,9 +21,11 @@ export default function Contact() {
       })
     });
     if(response.ok){
-      alert('Message sent successfully on email');
+      alert('Message sent successfully to our email. We will get back to you soon.');
+      setEmail('');
+      setMessage('') ;
     }else{
-      alert('Failed to send message on email');
+      alert('Failed to send message on email! Please try again later.');
     }
   }
 
