@@ -22,7 +22,7 @@ export const sendMail = async({email , message})=>{
             },
             to: email,
             subject: 'Message from my website',
-            text: "Hello world" ,
+            text: message ,
             });
   } catch (error) {
       console.log("Check the helper function" ,error);
