@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { closes, menues } from "@/assets";
 import { navLinks } from "@/constants";
+import { motion } from "framer-motion";
 
 export function Navbar() {
   const [active, setActive] = useState("Home");
@@ -18,7 +19,7 @@ export function Navbar() {
       }}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6 sm:flex">
-        <Link className="flex items-center gap-2" href="#">
+        <Link className="flex items-center gap-2" href="/">
           <Image
             alt="Logo"
             className="h-8 w-8"
@@ -72,15 +73,15 @@ export function Navbar() {
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
-                  <li
+                  <motion.li
                     key={nav.id}
                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
                       active === nav.title ? "text-white" : "text-dimWhite"
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                     onClick={() => setActive(nav.title)}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
-                  </li>
+                    <Link href={`${nav.id}`}>{nav.title}</Link>
+                  </motion.li>
                 ))}
               </ul>
             </div>
