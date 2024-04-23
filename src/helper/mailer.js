@@ -15,16 +15,29 @@ export const sendMail = async({email , message})=>{
         },
         });
         
-        const info = await transporter.sendMail({
-            from:{
-              name:'Linux Club',
-              address: email,
-            },
-            to: process.env.EMAIL,
-            subject: 'Doubt from the student',
-            text: `From: ${email}\n\n${message}`,
-            
-            });
+        const mailData = {
+          from:{
+            name:'Linux Club',
+            address: email,
+          },
+          to: process.env.EMAIL,
+          subject: 'Doubt from the student',
+          text: `From: ${email}\n\n${message}`,
+      };
+      
+      await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailData, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
+
   } catch (error) {
       console.log("Check the helper function" ,error);
   }
