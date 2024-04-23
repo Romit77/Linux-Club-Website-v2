@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { closes, menues } from "@/assets";
 import { navLinks } from "@/constants";
-import { motion } from "framer-motion";
 
 export function Navbar() {
   const [active, setActive] = useState("Home");
@@ -32,16 +31,28 @@ export function Navbar() {
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
           <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
-            <Link className="text-md font-bold hover:underline" href="/">
+            <Link
+              className="text-md font-bold hover:underline hover:text-purple-500"
+              href="/"
+            >
               Home
             </Link>
-            <Link className="text-md font-bold hover:underline" href="/Events">
+            <Link
+              className="text-md font-bold hover:underline  hover:text-purple-500"
+              href="/Events"
+            >
               Events
             </Link>
-            <Link className="text-md font-bold hover:underline" href="/Team">
+            <Link
+              className="text-md font-bold hover:underline  hover:text-purple-500"
+              href="/Team"
+            >
               Team
             </Link>
-            <Link className="text-md font-bold hover:underline" href="/Contact">
+            <Link
+              className="text-md font-bold hover:underline  hover:text-purple-500"
+              href="/Contact"
+            >
               Contact
             </Link>
           </div>
