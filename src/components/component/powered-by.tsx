@@ -10,7 +10,7 @@ export function PoweredBy() {
         </p>
       </div>
       <div className="flex justify-center items-center gap-8 sm:gap-8">
-        <div className="group relative w-full h-20 py-5 ">
+        <div className="group relative sm:max-w-[450px] max-w-80  h-40 sm:h-40 py-5 mx-auto ">
           <Image
             alt="gmc"
             className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-colors py-2"
