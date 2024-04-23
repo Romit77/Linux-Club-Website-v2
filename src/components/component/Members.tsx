@@ -148,7 +148,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Mansi Bakhshi
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
