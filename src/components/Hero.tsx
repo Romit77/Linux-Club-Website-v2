@@ -27,8 +27,8 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-            quo.
+            &quot;Explore the world of Linux with our club. Learn, collaborate,
+            and delve into the power of open-source technology together.&quot;
           </motion.p>
         </Vortex>
       </div>

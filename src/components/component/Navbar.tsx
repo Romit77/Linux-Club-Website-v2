@@ -1,12 +1,12 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { closes, menues } from "@/assets"
-import { navLinks } from "@/constants"
+import { closes, menues } from "@/assets";
+import { navLinks } from "@/constants";
+import { motion } from "framer-motion";
 
 export function Navbar() {
-  
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
@@ -27,54 +27,53 @@ export function Navbar() {
             src="/club.png"
             width={50}
           />
-          
+
           <span className="text-xl font-bold ">Linux Club </span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
+          <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
+            <Link className="text-md font-bold hover:underline" href="/">
+              Home
+            </Link>
+            <Link className="text-md font-bold hover:underline" href="/Events">
+              Events
+            </Link>
+            <Link className="text-md font-bold hover:underline" href="/Team">
+              Team
+            </Link>
+            <Link className="text-md font-bold hover:underline" href="/Contact">
+              Contact
+            </Link>
+          </div>
 
-         <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
-           <Link className="text-md font-bold hover:underline" href="/">
-            Home
-           </Link>
-           <Link className="text-md font-bold hover:underline" href="/Events">
-            Events
-           </Link>
-           <Link className="text-md font-bold hover:underline" href="/Team">
-            Team
-           </Link>
-           <Link className="text-md font-bold hover:underline" href="/Contact">
-            Contact
-           </Link>
-         </div> 
-                
-          <div className="sm:hidden flex flex-1 justify-end items-center">
-        <Image
-          src={toggle ? closes : menues}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
-        />
+          <motion.div className="sm:hidden flex flex-1 justify-end items-center">
+            <Image
+              src={toggle ? closes : menues}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain"
+              onClick={() => setToggle(!toggle)}
+            />
 
-        <div
-          className={`${
-            !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-        >
-         <ul className="list-none flex justify-end items-start flex-1 flex-col">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-           </div>
-         </div>
+            <motion.div
+              className={`${
+                !toggle ? "hidden" : "flex"
+              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+            >
+              <ul className="list-none flex justify-end items-start flex-1 flex-col">
+                {navLinks.map((nav, index) => (
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.title ? "text-white" : "text-dimWhite"
+                    } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                    onClick={() => setActive(nav.title)}
+                  >
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.div>
         </nav>
       </div>
     </header>

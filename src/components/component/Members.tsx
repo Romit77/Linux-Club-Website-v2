@@ -127,7 +127,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -142,10 +142,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -153,7 +165,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -168,10 +180,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -179,7 +203,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -194,10 +218,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -205,7 +241,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -220,10 +256,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -231,7 +279,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -246,10 +294,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -257,7 +317,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -272,10 +332,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -283,7 +355,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -298,10 +370,22 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
@@ -309,7 +393,7 @@ export function Members() {
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.8 }}
                 >
                   <Image
                     alt="@shadcn"
@@ -324,14 +408,31 @@ export function Members() {
                   />
                 </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-start space-y-2">
-                <div className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
                   <Image
                     alt="@shadcn"
                     className="rounded-full object-cover"
@@ -343,12 +444,24 @@ export function Members() {
                     }}
                     width="144"
                   />
-                </div>
+                </motion.div>
                 <div className="space-y-1 text-sm">
-                  <h3 className="font-semibold">Mansi Bakshi</h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mansi Bakshi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
                     Product Manager
-                  </p>
+                  </motion.p>
                 </div>
               </div>
             </div>
