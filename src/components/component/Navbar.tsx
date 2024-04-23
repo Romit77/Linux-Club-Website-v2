@@ -32,23 +32,23 @@ export function Navbar() {
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
           <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
-            <Link className="text-md font-bold  hover:text-purple-500" href="/">
+            <Link className="text-md font-bold  hover:text-[#8602FA]" href="/">
               Home
             </Link>
             <Link
-              className="text-md font-bold   hover:text-purple-500"
+              className="text-md font-bold   hover:text-[#8602FA]"
               href="/Events"
             >
               Events
             </Link>
             <Link
-              className="text-md font-bold   hover:text-purple-500"
+              className="text-md font-bold   hover:text-[#8602FA]"
               href="/Team"
             >
               Team
             </Link>
             <Link
-              className="text-md font-bold   hover:text-purple-500"
+              className="text-md font-bold   hover:text-[#8602FA]"
               href="/Contact"
             >
               Contact
