@@ -2,8 +2,31 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Navbar } from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
+import { useState } from "react";
 
 export default function Contact() {
+  const[email, setEmail] = useState('');
+  const[message, setMessage] = useState('');
+
+  const sendMail = async (ev:any) => {
+   
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        email,
+        message
+      })
+    });
+    if(response.ok){
+      alert('Message sent successfully on email');
+    }else{
+      alert('Failed to send message on email');
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -20,16 +43,22 @@ export default function Contact() {
             type="text"
             placeholder="Enter your email address"
             className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 h-10 p-2"
+            value={email}
+            onChange={(ev)=>setEmail(ev.target.value)}
           />
           <input
             type="text"
             placeholder="Your Message"
             className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 h-20 p-2"
+            value={message}
+            onChange={(ev)=>setMessage(ev.target.value)}
           />
         </div>
+
         <button
           type="submit"
-          className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc cursor-pointer"
+          className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc cursor-pointer mt-4 relative z-10"
+          onClick={sendMail}
         >
           Send Message
         </button>
