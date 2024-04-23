@@ -46,7 +46,7 @@ export function Navbar() {
             </Link>
           </div>
 
-          <motion.div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="sm:hidden flex flex-1 justify-end items-center">
             <Image
               src={toggle ? closes : menues}
               alt="menu"
@@ -54,7 +54,7 @@ export function Navbar() {
               onClick={() => setToggle(!toggle)}
             />
 
-            <motion.div
+            <div
               className={`${
                 !toggle ? "hidden" : "flex"
               } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
@@ -72,8 +72,8 @@ export function Navbar() {
                   </li>
                 ))}
               </ul>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
