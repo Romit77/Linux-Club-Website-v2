@@ -10,7 +10,7 @@ export function Members() {
     <>
       <Navbar />;
       <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative  mt-10 ">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
 
         <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">
           <div className="space-y-3">
@@ -156,7 +156,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    President
                   </motion.p>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Parv Daga
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -194,7 +194,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    Vice President
                   </motion.p>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Manan Kohli
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -232,7 +232,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    Secretary & Finance Lead
                   </motion.p>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Bhuvika Aggarwal
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -270,7 +270,159 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    PR & Outreach Lead
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/event.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "cover",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Rakshita Singh
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Event Lead
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/texh.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "cover",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Yashwardhan Rastogi
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Technical Lead
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/content.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "cover",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Mannat Pal
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Content lead
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/design.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "cover",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Harjas Singh
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Design Lead
                   </motion.p>
                 </div>
               </div>
@@ -300,7 +452,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Ambika Sharma
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -308,7 +460,45 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    Social Media Lead
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/rd.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "contain",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Purnima Sahoo
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Research and Development Lead
                   </motion.p>
                 </div>
               </div>
@@ -338,7 +528,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Romit Dey
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -346,7 +536,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
+                    Web Lead
                   </motion.p>
                 </div>
               </div>
@@ -361,7 +551,7 @@ export function Members() {
                     alt="@shadcn"
                     className="rounded-full object-cover"
                     height="144"
-                    src="/p.png"
+                    src="/mark.png"
                     style={{
                       aspectRatio: "144/144",
                       objectFit: "cover",
@@ -376,7 +566,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Mansi Bakshi
+                    Ananya Dave
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -384,83 +574,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Product Manager
-                  </motion.p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start space-y-2">
-                <motion.div
-                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                >
-                  <Image
-                    alt="@shadcn"
-                    className="rounded-full object-cover"
-                    height="144"
-                    src="/p.png"
-                    style={{
-                      aspectRatio: "144/144",
-                      objectFit: "cover",
-                    }}
-                    width="144"
-                  />
-                </motion.div>
-                <div className="space-y-1 text-sm">
-                  <motion.h3
-                    className="font-semibold"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Mansi Bakshi
-                  </motion.h3>
-                  <motion.p
-                    className="text-sm text-gray-500 dark:text-gray-400"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Product Manager
-                  </motion.p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start space-y-2">
-                <motion.div
-                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                >
-                  <Image
-                    alt="@shadcn"
-                    className="rounded-full object-cover"
-                    height="144"
-                    src="/p.png"
-                    style={{
-                      aspectRatio: "144/144",
-                      objectFit: "cover",
-                    }}
-                    width="144"
-                  />
-                </motion.div>
-                <div className="space-y-1 text-sm">
-                  <motion.h3
-                    className="font-semibold"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Mansi Bakshi
-                  </motion.h3>
-                  <motion.p
-                    className="text-sm text-gray-500 dark:text-gray-400"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Product Manager
+                    Marketing Lead
                   </motion.p>
                 </div>
               </div>

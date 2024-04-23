@@ -7,27 +7,40 @@ export const sendMail = async({email , message})=>{
     const transporter = nodeMailer.createTransport({
         service: 'gmail',
         host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // Use `true` for port 465, `false` for all other ports
+        port: 465,
+        secure: true, // Use `true` for port 465, `false` for all other ports
         auth: {
           user: process.env.EMAIL,
           pass: process.env.PASSWORD,
         },
         });
+
+        await new Promise((resolve, reject) => {
+          // verify connection configuration
+          transporter.verify(function (error, success) {
+              if (error) {
+                  console.log(error);
+                  reject(error);
+              } else {
+                  console.log("Server is ready to take our messages");
+                  resolve(success);
+              }
+          });
+      });
         
         const mailData = {
           from:{
             name:'Linux Club',
-            address: email,
+            address: process.env.EMAIL,
           },
           to: process.env.EMAIL,
           subject: 'Doubt from the student',
           text: `From: ${email}\n\n${message}`,
       };
       
-      await new Promise((resolve, reject) => {
+      await new Promise(async(resolve, reject) => {
         // send mail
-        transporter.sendMail(mailData, (err, info) => {
+         await transporter.sendMail(mailData, (err, info) => {
             if (err) {
                 console.error(err);
                 reject(err);
