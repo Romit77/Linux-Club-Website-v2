@@ -11,9 +11,9 @@ export function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 text-gray-200 p-2 bg-transparent"
+      className="fixed top-0 left-0 right-0 z-50 text-gray-200 p-2 bg-black bg-opacity-50"
       style={{
-        background: "transparent",
+        background: "black",
         backdropFilter: "blur(5px)",
       }}
     >
@@ -47,7 +47,7 @@ export function Navbar() {
               className="text-md font-bold hover:underline  hover:text-purple-500"
               href="/Team"
             >
-              Team
+              Our Team
             </Link>
             <Link
               className="text-md font-bold hover:underline  hover:text-purple-500"

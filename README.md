@@ -1,1 +1,1 @@
-## Linux Club - VITB
+## Linux Club VITB

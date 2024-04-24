@@ -78,7 +78,7 @@ export function Footer() {
       </div>
       <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400 mx-[50px]">
         <span className="sm:ml-[45px] mx-auto">
-          © 2024 Linux Club. All rights reserved.
+        Made with ❤️by Linux Club
         </span>
       </div>
     </footer>
