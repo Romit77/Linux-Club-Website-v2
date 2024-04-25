@@ -1,91 +1,159 @@
 "use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
 import {
-  CardTitle,
-  CardDescription,
-  CardContent,
-  Card,
-} from "@/components/ui/card";
+  CarouselItem,
+  CarouselContent,
+  CarouselPrevious,
+  CarouselNext,
+  Carousel,
+} from "@/components/ui/carousel";
+import Link from "next/link";
+import Image from "next/image";
+import { Navbar } from "@/components/component/Navbar";
+import { Footer } from "@/components/component/footer";
+import { motion } from "framer-motion";
 
-export default function Events() {
+export default function events() {
   return (
-    <div className="px-4 py-6 md:py-12">
-      <div className="mx-auto max-w-5xl grid items-start gap-6">
-        <motion.div
-          animate={{
-            opacity: 1,
-            translateY: 0,
-          }}
-          className="space-y-2"
-          initial={{
-            opacity: 0,
-            translateY: 4,
-          }}
-          transition={{
-            duration: 0.4,
-          }}
-        >
-          <h1 className="text-3xl font-bold tracking-tight text-center">
-            Events Archive
-          </h1>
-          <p className="text-gray-500 dark:text-gray-400 text text-center">
-            A collection of our past events.
-          </p>
-        </motion.div>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card>
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <Image
-                alt="Events"
-                className="object-cover w-full aspect-none"
-                height={300}
-                src="/placeholder.svg"
-                width={400}
-              />
+    <>
+      <Navbar />
+      <div className="container mx-auto justify-center items-center flex py-12 px-4 md:px-6 mt-10">
+        <div className="grid gap-12">
+          <div>
+            <motion.h2
+              className="mb-6 text-3xl font-bold"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              Upcoming Events
+            </motion.h2>
+            <Carousel className="w-full max-w-4xl">
+              <CarouselContent>
+                <CarouselItem>
+                  <Image
+                    alt="Event 1"
+                    className="aspect-[2/1] w-full rounded-lg object-cover"
+                    height="400"
+                    src="/placeholder.svg"
+                    width="800"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Event 2"
+                    className="aspect-[2/1] w-full rounded-lg object-cover"
+                    height="400"
+                    src="/placeholder.svg"
+                    width="800"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Event 3"
+                    className="aspect-[2/1] w-full rounded-lg object-cover"
+                    height="400"
+                    src="/placeholder.svg"
+                    width="800"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Event 4"
+                    className="aspect-[2/1] w-full rounded-lg object-cover"
+                    height="400"
+                    src="/placeholder.svg"
+                    width="800"
+                  />
+                </CarouselItem>
+                <CarouselItem>
+                  <Image
+                    alt="Event 5"
+                    className="aspect-[2/1] w-full rounded-lg object-cover"
+                    height="400"
+                    src="/placeholder.svg"
+                    width="800"
+                  />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+          <div>
+            <motion.h2
+              className="mb-6 text-3xl font-bold"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              Past Events
+            </motion.h2>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                <Link className="absolute inset-0 z-10" href="#">
+                  <motion.span className="sr-only">View Event</motion.span>
+                </Link>
+                <Image
+                  alt="Past Event 1"
+                  className="aspect-[5/3] w-full rounded-t-lg object-cover"
+                  height="300"
+                  src="/placeholder.svg"
+                  width="500"
+                />
+                <div className="bg-white p-4 dark:bg-gray-950">
+                  <motion.h3
+                    className="font-bold text-xl"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    Third Eye Quest
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    AdVITya &apos;24
+                  </motion.p>
+                </div>
+              </div>
+              <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+                <Link className="absolute inset-0 z-10" href="#">
+                  <span className="sr-only">View Event</span>
+                </Link>
+                <Image
+                  alt="Past Event 2"
+                  className="aspect-[5/3] w-full rounded-t-lg object-cover"
+                  height="300"
+                  src="/placeholder.svg"
+                  width="500"
+                />
+                <div className="bg-white p-4 dark:bg-gray-950">
+                  <motion.h3
+                    className="font-bold text-xl"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    Silent Disco
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                  >
+                    AdVITya &apos;24
+                  </motion.p>
+                </div>
+              </div>
             </div>
-            <CardContent className="p-6">
-              <CardTitle className="text-xl font-bold text-center mt-0">
-                {" "}
-                {/* Added mt-0 */}
-                Third Eye Quest
-              </CardTitle>
-              <CardDescription>
-                Calling all cyber sleuths! Third Eye Quest, part of AdVITya
-                fest, challenged you to a thrilling two-phase adventure
-                (February 19th & 22nd, 2024). You cracked cryptic codes and
-                navigated online mazes in &quot;Digital Infiltration&quot;
-                (Phase 1). You then pushed your limits in the offline
-                &quot;Extraction Point&quot; (Phase 2) for top-secret intel. You
-                competed, collaborated, and conquered this adrenaline-pumping
-                quest!
-              </CardDescription>
-            </CardContent>
-          </Card>
-          <Card>
-            <div className="aspect-[4/3] overflow-hidden rounded-lg">
-              <Image
-                alt="Events"
-                className="object-cover w-full aspect-none"
-                height={300}
-                src="/placeholder.svg"
-                width={400}
-              />
-            </div>
-            <CardContent className="p-6">
-              <CardTitle className="text-xl font-bold mt-0">
-                {" "}
-                {/* Added mt-0 */}
-                Winter Wonderland
-              </CardTitle>
-              <CardDescription>
-                Experience the magic of the holidays with our enchanting light
-                display.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
