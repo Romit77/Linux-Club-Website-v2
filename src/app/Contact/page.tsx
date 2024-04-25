@@ -1,38 +1,43 @@
 "use client";
-
 import { Navbar } from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { useState } from "react";
 import { Spotlight } from "@/components/ui/Spotlight";
+import { Toaster, toast } from "sonner";
+import { z } from "zod";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendMail = async (ev: any) => {
+  const sendMail = async () => {
+    try {
+      const parsedEmail = schema.parse(email);
+    } catch (error: any) {
+      toast.error("Invalid email format");
+      return;
+    }
+
     const response = await fetch("/api/mail", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        message,
-      }),
+      body: JSON.stringify({ email, message }),
     });
     if (response.ok) {
-      alert(
+      toast.success(
         "Message sent successfully to our email. We will get back to you soon."
       );
       setEmail("");
       setMessage("");
     } else {
-      alert("Failed to send message on email! Please try again later.");
+      toast.error("Failed to send message on email! Please try again later.");
     }
   };
 
+  const schema = z.string().email({ message: "invalid email format" });
+
   return (
     <>
+      <Toaster />
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
