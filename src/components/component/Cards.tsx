@@ -3,7 +3,7 @@ import { HoverEffect } from "../ui/card-hover-effect";
 export function Cards() {
   return (
     <div className="max-w-6xl mx-auto px-10 p-2 z-0 text-purple-700	flex flex-wrap justify-between">
-      <HoverEffect items={projects} />
+      <HoverEffect items={projects} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 py-10"/>
     </div>
   );
 }

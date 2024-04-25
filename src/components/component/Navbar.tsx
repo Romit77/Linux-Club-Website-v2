@@ -11,9 +11,9 @@ export function Navbar() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 text-gray-200 p-2 bg-black bg-opacity-50"
+      className="fixed top-0 left-0 right-0 z-50 text-gray-200 p-2 bg-transparent"
       style={{
-        background: "black",
+        background: "Transparent",
         backdropFilter: "blur(5px)",
       }}
     >
@@ -68,7 +68,7 @@ export function Navbar() {
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+              } bg-unset p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-black bg-opacity-90`}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
