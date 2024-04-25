@@ -10,16 +10,10 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendMail = async (ev: any) => {
+  const sendMail = async () => {
     const response = await fetch("/api/mail", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        message,
-      }),
+      body: JSON.stringify({ email }),
     });
     if (response.ok) {
       toast.success(
