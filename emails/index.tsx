@@ -14,10 +14,12 @@ import * as React from "react";
 
 interface KoalaWelcomeEmailProps {
   userFirstname: string;
+  message: string;
 }
 
 export const KoalaWelcomeEmail = ({
   userFirstname = "Zeno",
+  message,
 }: KoalaWelcomeEmailProps) => (
   <Html>
     <Head />
@@ -37,6 +39,7 @@ export const KoalaWelcomeEmail = ({
           Learn, collaborate, and delve into the power of open-source technology
           together.
         </Text>
+        {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>
           <Button style={button} href="linux-vitb.vercel.app">
             Get started

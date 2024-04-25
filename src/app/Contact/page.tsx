@@ -20,7 +20,7 @@ export default function Contact() {
 
     const response = await fetch("/api/mail", {
       method: "POST",
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, message }),
     });
     if (response.ok) {
       toast.success(
