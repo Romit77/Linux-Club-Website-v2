@@ -18,7 +18,7 @@ interface KoalaWelcomeEmailProps {
 }
 
 export const KoalaWelcomeEmail = ({
-  userFirstname = "Zeno",
+  userFirstname = "User",
   message,
 }: KoalaWelcomeEmailProps) => (
   <Html>
@@ -28,9 +28,9 @@ export const KoalaWelcomeEmail = ({
       <Container style={container}>
         <Img
           src={`https://images.unsplash.com/photo-1629654297299-c8506221ca97?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
-          width="50"
-          height="50"
-          alt="Koala"
+          width="70"
+          height="70"
+          alt="Linux"
           style={logo}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>

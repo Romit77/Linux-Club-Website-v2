@@ -10,7 +10,7 @@ export async function POST(request: Request, res: Response) {
   const { data, error } = await resend.emails.send({
     from: "Acme <onboarding@resend.dev>",
     to: [email],
-    subject: "test",
+    subject: "Feedback",
     html: render(WelcomeTemplate({ userFirstname, message })),
   });
 
