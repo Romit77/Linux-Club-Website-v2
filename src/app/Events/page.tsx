@@ -115,7 +115,7 @@ export default function events() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    AdVITya &apos;24
+                    AdVITyas &apos;24
                   </motion.p>
                 </div>
               </div>
