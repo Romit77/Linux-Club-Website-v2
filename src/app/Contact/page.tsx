@@ -7,33 +7,39 @@ import { Toaster, toast } from "sonner";
 import { z } from "zod";
 
 export default function Contact() {
-  const [email, setEmail] = useState("");
+  const [UserEmail, setUserEmail] = useState("");
   const [message, setMessage] = useState("");
 
   const sendMail = async () => {
     try {
-      const parsedEmail = schema.parse(email);
+      emailschema.parse(UserEmail);
     } catch (error: any) {
       toast.error("Invalid email format");
       return;
     }
 
+    try {
+      messageSchema.parse(message);
+    } catch (error) {
+      toast.error("Message must be of 6 or more characters");
+    }
     const response = await fetch("/api/mail", {
       method: "POST",
-      body: JSON.stringify({ email, message }),
+      body: JSON.stringify({ UserEmail, message }),
     });
     if (response.ok) {
       toast.success(
         "Message sent successfully to our email. We will get back to you soon."
       );
-      setEmail("");
+      setUserEmail("");
       setMessage("");
     } else {
       toast.error("Failed to send message on email! Please try again later.");
     }
   };
 
-  const schema = z.string().email({ message: "invalid email format" });
+  const emailschema = z.string().email({ message: "invalid email format" });
+  const messageSchema = z.string().min(6);
 
   return (
     <>
@@ -58,21 +64,21 @@ export default function Contact() {
               type="text"
               placeholder="Enter your email address"
               className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 h-10 p-2"
-              value={email}
-              onChange={(ev) => setEmail(ev.target.value)}
+              value={UserEmail}
+              onChange={(e) => setUserEmail(e.target.value)}
             />
             <input
               type="text"
               placeholder="Your Message"
               className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700 h-20 p-2"
               value={message}
-              onChange={(ev) => setMessage(ev.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
 
           <button
             type="submit"
-            className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc cursor-pointer mt-4 relative z-10"
+            className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc  mt-4 relative z-10 cursor-pointer"
             onClick={sendMail}
           >
             Send Message
@@ -83,11 +89,3 @@ export default function Contact() {
     </>
   );
 }
-
-// import React from "react";
-
-// export default function Contact() {
-//   return <div>contact page</div>;
-// }
-
-//new branch test
