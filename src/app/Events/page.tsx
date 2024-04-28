@@ -100,7 +100,7 @@ export default function events() {
                   src="/silent.jpg"
                   width="500"
                 />
-                <div className="bg-white p-4 dark:bg-gray-950 object-contain text-black">
+                <div className="bg-white p-4 dark:bg-gray-950 object-contain text-gray-400">
                   <motion.h3
                     className="font-bold text-xl"
                     initial={{ opacity: 0, y: 20 }}
@@ -130,7 +130,7 @@ export default function events() {
                   src="/silent.jpg"
                   width="500"
                 />
-                <div className="bg-white p-4 dark:bg-gray-950 text-black">
+                <div className="bg-white p-4 dark:bg-gray-950 text-gray-400">
                   <motion.h3
                     className="font-bold text-xl"
                     initial={{ opacity: 0, y: 20 }}
