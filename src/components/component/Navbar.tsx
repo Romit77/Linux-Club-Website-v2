@@ -7,7 +7,7 @@ import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 
 export function Navbar() {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -59,7 +59,7 @@ export function Navbar() {
             <Image
               src={toggle ? closes : menues}
               alt="menu"
-              className="w-[28px] h-[28px] object-contain"
+              className="w-[28px] h-[28px] object-contain mr-4 cursor-pointer "
               onClick={() => setToggle(!toggle)}
             />
 
@@ -73,8 +73,8 @@ export function Navbar() {
                   <motion.li
                     key={nav.id}
                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? "text-white" : "text-dimWhite"
-                    } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
+                      active === nav.title ? "text-white" : "text-gray-300"
+                    } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"} opacity-[180] hover:text-purple-600  transition duration-300 ease-in-out`}
                     onClick={() => setActive(nav.title)}
                   >
                     <Link href={`${nav.id}`}>{nav.title}</Link>
