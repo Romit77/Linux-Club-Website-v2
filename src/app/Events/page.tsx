@@ -34,8 +34,11 @@ export default function events() {
                     alt="Event 1"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/disco.jpg"
+                    src="/reveal.png"
                     width="800"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </CarouselItem>
                 <CarouselItem>
@@ -43,8 +46,11 @@ export default function events() {
                     alt="Event 2"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/disco.jpg"
+                    src="/reveal.png"
                     width="800"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </CarouselItem>
                 <CarouselItem>
@@ -52,8 +58,11 @@ export default function events() {
                     alt="Event 3"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/disco.jpg"
+                    src="/reveal.png"
                     width="800"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </CarouselItem>
                 <CarouselItem>
@@ -61,8 +70,11 @@ export default function events() {
                     alt="Event 4"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/disco.jpg"
+                    src="/reveal.png"
                     width="800"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </CarouselItem>
                 <CarouselItem>
@@ -70,8 +82,11 @@ export default function events() {
                     alt="Event 5"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/disco.jpg"
+                    src="/reveal.png"
                     width="800"
+                    style={{
+                      objectFit: "contain",
+                    }}
                   />
                 </CarouselItem>
               </CarouselContent>
@@ -127,7 +142,7 @@ export default function events() {
                   alt="Past Event 2"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/silent.jpg"
+                  src="/disco.jpg"
                   width="500"
                 />
                 <div className="bg-white p-4 dark:bg-gray-950 text-gray-400">

@@ -28,7 +28,9 @@ export function Navbar() {
             width={50}
           />
 
-          <span className="text-xl font-bold ">Linux Club </span>
+          <span className="text-xl font-bold text-purple-600  ">
+            Linux Club{" "}
+          </span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
           <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
