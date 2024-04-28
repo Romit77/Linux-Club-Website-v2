@@ -12,7 +12,7 @@ export default function Contact() {
 
   const sendMail = async () => {
     try {
-      const parsedEmail = schema.safeParse(email);
+      schema.safeParse(email);
     } catch (error: any) {
       toast.error("Invalid email format");
       return;
