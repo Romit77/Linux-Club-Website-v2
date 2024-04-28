@@ -110,16 +110,13 @@ export function Members() {
           <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">
             <div className="space-y-3">
               <motion.h2
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl p-5"
+                className="text-3xl font-semibold tracking-tighter sm:text-4xl md:text-5xl p-5"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
               >
                 Meet the Team
               </motion.h2>
-              {/* <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              The people behind the magic.
-            </p> */}
             </div>
             <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3 lg:gap-12">
               <div className="flex flex-col items-center justify-start space-y-2">

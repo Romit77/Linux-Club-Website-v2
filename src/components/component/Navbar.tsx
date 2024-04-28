@@ -28,7 +28,9 @@ export function Navbar() {
             width={50}
           />
 
-          <span className="text-xl font-bold ">Linux Club </span>
+          <span className="text-xl font-bold text-purple-600  ">
+            Linux Club{" "}
+          </span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
           <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
@@ -45,7 +47,7 @@ export function Navbar() {
               className="text-md font-bold   hover:text-[#8602FA]"
               href="/Team"
             >
-              Team
+              Our Team
             </Link>
             <Link
               className="text-md font-bold   hover:text-[#8602FA]"
@@ -55,18 +57,18 @@ export function Navbar() {
             </Link>
           </div>
 
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="sm:hidden flex flex-1 justify-end items-center ">
             <Image
               src={toggle ? closes : menues}
               alt="menu"
-              className="w-[28px] h-[28px] object-contain mr-4 cursor-pointer "
+              className="w-[28px] h-[28px] object-contain mr-4 cursor-pointer  "
               onClick={() => setToggle(!toggle)}
             />
 
             <div
               className={`${
                 !toggle ? "hidden" : "flex"
-              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+              } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar bg-black `}
             >
               <ul className="list-none flex justify-end items-start flex-1 flex-col">
                 {navLinks.map((nav, index) => (
@@ -74,7 +76,9 @@ export function Navbar() {
                     key={nav.id}
                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
                       active === nav.title ? "text-white" : "text-gray-300"
-                    } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"} opacity-[180] hover:text-purple-600  transition duration-300 ease-in-out`}
+                    } ${
+                      index === navLinks.length - 1 ? "mb-0" : "mb-4"
+                    } opacity-[180] hover:text-purple-600  transition duration-300 ease-in-out`}
                     onClick={() => setActive(nav.title)}
                   >
                     <Link href={`${nav.id}`}>{nav.title}</Link>

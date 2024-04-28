@@ -13,15 +13,10 @@ export default function Contact() {
   const sendMail = async () => {
     try {
       emailschema.parse(UserEmail);
-    } catch (error: any) {
-      toast.error("Invalid email format");
-      return;
-    }
-
-    try {
       messageSchema.parse(message);
-    } catch (error) {
-      toast.error("Message must be of 6 or more characters");
+    } catch (error: any) {
+      toast.error("Invalid email format or message is less than 6 characters");
+      return;
     }
     const response = await fetch("/api/mail", {
       method: "POST",
