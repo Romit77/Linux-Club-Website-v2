@@ -17,8 +17,8 @@ export default function events() {
     <>
       <Navbar />
       <div className="container mx-auto justify-center items-center flex py-12 px-4 md:px-6 mt-10">
-        <div className="grid gap-12">
-          <div>
+        <div className="grid gap-12 text-white text-center">
+          <div className='align-middle'>
             <motion.h2
               className="mb-6 text-3xl font-bold"
               initial={{ opacity: 0, y: 20 }}
@@ -27,14 +27,14 @@ export default function events() {
             >
               Upcoming Events
             </motion.h2>
-            <Carousel className="w-full max-w-4xl">
+            <Carousel className="w-full max-w-5xl mx-auto">
               <CarouselContent>
                 <CarouselItem>
                   <Image
                     alt="Event 1"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/placeholder.svg"
+                    src="/silent_disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -43,7 +43,7 @@ export default function events() {
                     alt="Event 2"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/placeholder.svg"
+                    src="/silent_disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -52,7 +52,7 @@ export default function events() {
                     alt="Event 3"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/placeholder.svg"
+                    src="/silent_disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -61,7 +61,7 @@ export default function events() {
                     alt="Event 4"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/placeholder.svg"
+                    src="/silent_disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -70,7 +70,7 @@ export default function events() {
                     alt="Event 5"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/placeholder.svg"
+                    src="/silent_disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -97,10 +97,10 @@ export default function events() {
                   alt="Past Event 1"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/silent_disco.jpg"
                   width="500"
                 />
-                <div className="bg-white p-4 dark:bg-gray-950">
+                <div className="bg-white p-4 dark:bg-gray-950 object-contain text-black">
                   <motion.h3
                     className="font-bold text-xl"
                     initial={{ opacity: 0, y: 20 }}
@@ -127,10 +127,10 @@ export default function events() {
                   alt="Past Event 2"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/silent_disco.jpg"
                   width="500"
                 />
-                <div className="bg-white p-4 dark:bg-gray-950">
+                <div className="bg-white p-4 dark:bg-gray-950 text-black">
                   <motion.h3
                     className="font-bold text-xl"
                     initial={{ opacity: 0, y: 20 }}
