@@ -52,7 +52,7 @@ export default function events() {
                     alt="Event 3"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent_disco.jpg"
+                    src="/disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -70,7 +70,7 @@ export default function events() {
                     alt="Event 5"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent.jpg"
+                    src="/disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -97,7 +97,7 @@ export default function events() {
                   alt="Past Event 1"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/silent_disco.jpg"
+                  src="/silent.jpg"
                   width="500"
                 />
                 <div className="bg-white p-4 dark:bg-gray-950 object-contain text-black">
@@ -127,7 +127,7 @@ export default function events() {
                   alt="Past Event 2"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/silent_disco.jpg"
+                  src="/silent.jpg"
                   width="500"
                 />
                 <div className="bg-white p-4 dark:bg-gray-950 text-black">
