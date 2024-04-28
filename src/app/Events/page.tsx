@@ -18,7 +18,7 @@ export default function events() {
       <Navbar />
       <div className="container mx-auto justify-center items-center flex py-12 px-4 md:px-6 mt-10">
         <div className="grid gap-12 text-white text-center">
-          <div className='align-middle'>
+          <div className="align-middle">
             <motion.h2
               className="mb-6 text-3xl font-bold"
               initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function events() {
                     alt="Event 1"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent_disco.jpg"
+                    src="/disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -43,7 +43,7 @@ export default function events() {
                     alt="Event 2"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent_disco.jpg"
+                    src="/disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -61,7 +61,7 @@ export default function events() {
                     alt="Event 4"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent_disco.jpg"
+                    src="/disco.jpg"
                     width="800"
                   />
                 </CarouselItem>
@@ -70,7 +70,7 @@ export default function events() {
                     alt="Event 5"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
                     height="400"
-                    src="/silent_disco.jpg"
+                    src="/silent.jpg"
                     width="800"
                   />
                 </CarouselItem>
