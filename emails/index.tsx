@@ -36,11 +36,7 @@ export const KoalaWelcomeEmail = ({
           style={logo}
         />
         <Text style={paragraph}>Hi {userFirstname},</Text>
-        <Text style={paragraph}>
-          Welcome to Linux Club Vitb, Explore the world of Linux with our club.
-          Learn, collaborate, and delve into the power of open-source technology
-          together.
-        </Text>
+        <Text style={paragraph}>The user gave the following feedback :</Text>
         {UserEmail && <Text style={paragraph}> User-Email: {UserEmail}</Text>}
         {message && <Text style={paragraph}>Message: {message}</Text>}
         <Section style={btnContainer}>

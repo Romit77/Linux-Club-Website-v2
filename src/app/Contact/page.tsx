@@ -12,12 +12,17 @@ export default function Contact() {
 
   const sendMail = async () => {
     try {
-      schema.safeParse(UserEmail);
+      emailschema.parse(UserEmail);
     } catch (error: any) {
       toast.error("Invalid email format");
       return;
     }
 
+    try {
+      messageSchema.parse(message);
+    } catch (error) {
+      toast.error("Message must be of 6 or more characters");
+    }
     const response = await fetch("/api/mail", {
       method: "POST",
       body: JSON.stringify({ UserEmail, message }),
@@ -33,7 +38,8 @@ export default function Contact() {
     }
   };
 
-  const schema = z.string().email({ message: "invalid email format" });
+  const emailschema = z.string().email({ message: "invalid email format" });
+  const messageSchema = z.string().min(6);
 
   return (
     <>
