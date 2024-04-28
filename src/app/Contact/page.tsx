@@ -12,7 +12,7 @@ export default function Contact() {
 
   const sendMail = async () => {
     try {
-      const parsedEmail = schema.parse(email);
+      const parsedEmail = schema.safeParse(email);
     } catch (error: any) {
       toast.error("Invalid email format");
       return;
@@ -72,7 +72,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc cursor-pointer mt-4 relative z-10"
+            className="px-6 py-2 rounded-lg bg-gray-800 text-white font-medium hover:bg-zinc  mt-4 relative z-10 cursor-pointer"
             onClick={sendMail}
           >
             Send Message
@@ -83,11 +83,3 @@ export default function Contact() {
     </>
   );
 }
-
-// import React from "react";
-
-// export default function Contact() {
-//   return <div>contact page</div>;
-// }
-
-//new branch test
