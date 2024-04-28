@@ -47,7 +47,7 @@ export function Navbar() {
               className="text-md font-bold   hover:text-[#8602FA]"
               href="/Team"
             >
-              Team
+              Our Team
             </Link>
             <Link
               className="text-md font-bold   hover:text-[#8602FA]"
