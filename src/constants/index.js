@@ -10,7 +10,7 @@ export const navLinks = [
     redirect: "/Events",
   },
   {
-    id: "Team",
+    id: "Our Team",
     title: "Team",
     redirect: "/Team",
   },

@@ -28,9 +28,7 @@ export function Navbar() {
             width={50}
           />
 
-          <span className="text-xl font-bold text-purple-600  ">
-            Linux Club{" "}
-          </span>
+          <span className="text-xl font-bold text-purple-600 ">Linux Club</span>
         </Link>
         <nav className="flex items-center gap-4 md:gap-6 sm:flex">
           <div className="flex-1 items-center gap-4 md:gap-6 sm:flex hidden">
@@ -53,7 +51,7 @@ export function Navbar() {
               className="text-md font-bold   hover:text-[#8602FA]"
               href="/Contact"
             >
-              Contact
+              Contact us
             </Link>
           </div>
 
