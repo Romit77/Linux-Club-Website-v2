@@ -35,5 +35,3 @@ export function Hero() {
     </>
   );
 }
-
-//TODO: add line breaks after the powered by and why club sections
