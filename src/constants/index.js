@@ -10,8 +10,8 @@ export const navLinks = [
     redirect: "/Events",
   },
   {
-    id: "Our Team",
-    title: "Team",
+    id: "Team",
+    title: " Our Team",
     redirect: "/Team",
   },
   {
