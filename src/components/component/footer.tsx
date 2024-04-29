@@ -16,39 +16,24 @@ export function Footer() {
             }}
             width={32}
           />
-          <span className="text-lg font-bold text-gray-900 dark:text-gray-50">
+          <span className="text-lg font-bold text-gray-900 dark:text-gray-50  hover:text-purple-600">
             Linux Club
           </span>
         </Link>
         <nav className="flex flex-wrap items-center justify-center gap-4 text-sm font-medium text-gray-600 dark:text-gray-400">
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="/"
-          >
+          <Link className=" hover:text-purple-600" href="/">
             Home
           </Link>
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="/Events"
-          >
+          <Link className="  hover:text-purple-600" href="/Events">
             Events
           </Link>
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="/Team"
-          >
+          <Link className="  hover:text-purple-600" href="/Team">
             Team
           </Link>
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="/Contact"
-          >
+          <Link className="  hover:text-purple-600" href="/Contact">
             Contact
           </Link>
-          <Link
-            className="hover:text-gray-900 dark:hover:text-gray-50"
-            href="/join"
-          >
+          <Link className="  hover:text-purple-600" href="/join">
             Join us
           </Link>
         </nav>
@@ -77,9 +62,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mt-8 border-t border-gray-200 pt-8 text-center text-sm text-gray-600 dark:border-gray-700 dark:text-gray-400 mx-[50px]">
-        <span className="sm:ml-[45px] mx-auto">
-          © 2024 Linux Club. All rights reserved.
-        </span>
+        <span className="sm:ml-[45px] mx-auto">Made with ❤️ by Linux Club</span>
       </div>
     </footer>
   );
