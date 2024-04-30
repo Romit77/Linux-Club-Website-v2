@@ -1,4 +1,7 @@
-<img src="https://github.com/Romit77/Linux-Club-Website-v2/blob/main/public/logo.png" style="display: block;  margin-left: auto;margin-right: auto;" />
+<p align="center">
+    <img src="https://github.com/Romit77/Linux-Club-Website-v2/blob/main/public/logo.png"/>
+</a>
+</p>
     
 <h1>Linux Club Website</h1>
 <p>Welcome to the official repository for the Linux Club website! This repository contains all the necessary files and resources to host and maintain our club's website. Whether you're a member, a contributor, or just curious about Linux, we're glad you're here!</p>
@@ -26,4 +29,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 <h3>Contact Us</h3>
 Have questions or need assistance? Feel free to reach out to us by using contact us page in website:
 
-Email: linuxclub@example.com
+Email: linuxvitbs@gmail.com
