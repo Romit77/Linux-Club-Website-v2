@@ -30,9 +30,9 @@ export const projects = [
     link: "/",
   },
   {
-    title: "Skill Development",
+    title: "Catalyst Community",
     description:
-      "Be an integral part of a community actively contributing to open-source projects. Your contributions can leave a lasting impact on the global tech community.",
+      "Unleash your potential in our vibrant community. Connect with driven individuals, amplify your impact, and embark on a journey of growth and contribution. Join us as we spark change and shape a brighter future together.",
     link: "/",
   },
 ];
