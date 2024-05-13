@@ -71,7 +71,7 @@ export default function ContactUs() {
               placeholder="Enter your message"
             />
           </div>
-          <Button className="w-full" type="submit">
+          <Button className="w-full bg-black" type="submit">
             Submit
           </Button>
         </div>
