@@ -130,44 +130,6 @@ export function Members() {
                     alt="@shadcn"
                     className="rounded-full object-cover"
                     height="144"
-                    src="/p.png"
-                    style={{
-                      aspectRatio: "144/144",
-                      objectFit: "cover",
-                    }}
-                    width="144"
-                  />
-                </motion.div>
-                <div className="space-y-1 text-sm">
-                  <motion.h3
-                    className="font-semibold"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Mansi Bakhshi
-                  </motion.h3>
-                  <motion.p
-                    className="text-sm text-gray-500 dark:text-gray-400"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    President
-                  </motion.p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start space-y-2">
-                <motion.div
-                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                >
-                  <Image
-                    alt="@shadcn"
-                    className="rounded-full object-cover"
-                    height="144"
                     src="/vp.jpg"
                     style={{
                       aspectRatio: "144/144",
@@ -191,7 +153,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Vice President
+                    President
                   </motion.p>
                 </div>
               </div>
@@ -222,6 +184,44 @@ export function Members() {
                     transition={{ delay: 1 }}
                   >
                     Manan Kohli
+                  </motion.h3>
+                  <motion.p
+                    className="text-sm text-gray-500 dark:text-gray-400"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Vice President
+                  </motion.p>
+                </div>
+              </div>
+              <div className="flex flex-col items-center justify-start space-y-2">
+                <motion.div
+                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                >
+                  <Image
+                    alt="@shadcn"
+                    className="rounded-full object-cover"
+                    height="144"
+                    src="/texh.png"
+                    style={{
+                      aspectRatio: "144/144",
+                      objectFit: "cover",
+                    }}
+                    width="144"
+                  />
+                </motion.div>
+                <div className="space-y-1 text-sm">
+                  <motion.h3
+                    className="font-semibold"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                  >
+                    Yashwardhan Rastogi
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -320,7 +320,7 @@ export function Members() {
                     alt="@shadcn"
                     className="rounded-full object-cover"
                     height="144"
-                    src="/texh.png"
+                    src="/web.png"
                     style={{
                       aspectRatio: "144/144",
                       objectFit: "cover",
@@ -335,7 +335,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Yashwardhan Rastogi
+                    Hemant Venugopal
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500 dark:text-gray-400"
@@ -347,44 +347,7 @@ export function Members() {
                   </motion.p>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-start space-y-2">
-                <motion.div
-                  className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                >
-                  <Image
-                    alt="@shadcn"
-                    className="rounded-full object-cover"
-                    height="144"
-                    src="/content.png"
-                    style={{
-                      aspectRatio: "144/144",
-                      objectFit: "cover",
-                    }}
-                    width="144"
-                  />
-                </motion.div>
-                <div className="space-y-1 text-sm">
-                  <motion.h3
-                    className="font-semibold"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Mannat Pal
-                  </motion.h3>
-                  <motion.p
-                    className="text-sm text-gray-500 dark:text-gray-400"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                  >
-                    Content lead
-                  </motion.p>
-                </div>
-              </div>
+              
               <div className="flex flex-col items-center justify-start space-y-2">
                 <motion.div
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
@@ -537,7 +500,8 @@ export function Members() {
                   </motion.p>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-start space-y-2">
+              
+              <div className="flex flex-col items-center justify-start space-y-2 col-start-3">
                 <motion.div
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
