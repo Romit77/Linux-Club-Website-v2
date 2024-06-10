@@ -229,7 +229,7 @@ export function Members() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1 }}
                   >
-                    Secretary & Finance Lead
+                    Secretary 
                   </motion.p>
                 </div>
               </div>
@@ -320,7 +320,7 @@ export function Members() {
                     alt="@shadcn"
                     className="rounded-full object-cover"
                     height="144"
-                    src="/web.png"
+                    src="/texh.png"
                     style={{
                       aspectRatio: "144/144",
                       objectFit: "cover",
@@ -500,8 +500,7 @@ export function Members() {
                   </motion.p>
                 </div>
               </div>
-              
-              <div className="flex flex-col items-center justify-start space-y-2 col-start-3">
+              <div className="flex flex-col items-center justify-start space-y-2 md:col-start-3">
                 <motion.div
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
                   initial={{ opacity: 0, y: 20 }}
