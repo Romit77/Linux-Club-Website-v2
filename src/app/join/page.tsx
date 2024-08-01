@@ -14,7 +14,7 @@ function page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
       >
-        Recruitmment Closed for now :)
+        Recruitment Closed for now :)
       </motion.div>
       <Footer />
     </>
