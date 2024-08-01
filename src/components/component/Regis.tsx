@@ -3,6 +3,15 @@ import axios from "axios";
 import { useState } from "react";
 import { Toaster } from "sonner";
 import { toast } from "sonner";
+import { z } from "zod";
+
+const emailSchema = z.object({
+  email: z.string().email(),
+});
+
+const nameSchema = z.object({
+  name: z.string().min(2),
+});
 
 export default function Regis() {
   const [name, setName] = useState("");
@@ -10,6 +19,13 @@ export default function Regis() {
 
   async function reqHandler(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const nameValidation = nameSchema.safeParse(name);
+    const emailValidation = emailSchema.safeParse(email);
+
+    if (!nameValidation.success || !emailValidation.success) {
+      toast.error("Enter a valid name and email");
+      return;
+    }
     try {
       const response = await axios.post(
         "http://localhost:3000/api/registration",
