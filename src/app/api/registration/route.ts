@@ -6,7 +6,6 @@ const prisma = new PrismaClient();
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-
     const exists = await prisma.user.findMany({
       where: {
         name: body.name,
