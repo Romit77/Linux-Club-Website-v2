@@ -6,7 +6,7 @@ import { closes, menues } from "@/assets";
 import { navLinks } from "@/constants";
 import { motion } from "framer-motion";
 
-export function Navbar() {
+export default function Navbar() {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 

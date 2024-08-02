@@ -2,7 +2,7 @@
 import { Vortex } from "./ui/vortex";
 import { motion } from "framer-motion";
 
-export function Hero() {
+export default function Hero() {
   return (
     <>
       <div className="w-[calc(100%-1rem)] mx-auto rounded-md  h-screen overflow-x-hidden">
