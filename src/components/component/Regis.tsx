@@ -7,6 +7,7 @@ import { z } from "zod";
 
 const emailSchema = z.string().email();
 const nameSchema = z.string().min(2);
+
 export default function Regis() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -31,7 +32,7 @@ export default function Regis() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/registration",
+        "/api/registration",
         {
           name,
           email,
@@ -50,10 +51,10 @@ export default function Regis() {
         <div className="w-full max-w-md space-y-8">
           <div>
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-[#c9b3ff]">
-              Join the Linux Club
+              Event Registration 
             </h2>
             <p className="mt-2 text-center text-sm text-[#a08bff]">
-              Register to become a member.
+              Register For Event.
             </p>
           </div>
           <form className="mt-8 space-y-6" onSubmit={reqHandler}>
@@ -69,7 +70,7 @@ export default function Regis() {
                   type="text"
                   autoComplete="name"
                   required
-                  className="relative block w-full appearance-none rounded-t-md border border-[#a08bff] px-3 py-2 text-[#c9b3ff] placeholder-[#a08bff] focus:z-10 focus:border-[#c9b3ff] focus:outline-none focus:ring-[#c9b3ff] sm:text-sm"
+                  className="relative block w-full appearance-none rounded-t-md border border-[#a08bff] px-3 py-2 text-[#c9b3ff] placeholder-[#a08bff] focus:z-10 focus:border-[#c9b3ff] focus:outline-none focus:ring-[#c9b3ff] sm:text-sm rounded-md"
                   placeholder="Name"
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -84,7 +85,7 @@ export default function Regis() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="relative block w-full appearance-none rounded-b-md border border-[#a08bff] px-3 py-2 text-[#c9b3ff] placeholder-[#a08bff] focus:z-10 focus:border-[#c9b3ff] focus:outline-none focus:ring-[#c9b3ff] sm:text-sm"
+                  className="relative block w-full mt-2 appearance-none rounded-b-md border border-[#a08bff] px-3 py-2 text-[#c9b3ff] placeholder-[#a08bff] focus:z-10 focus:border-[#c9b3ff] focus:outline-none focus:ring-[#c9b3ff] sm:text-sm rounded-md"
                   placeholder="Email address"
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -95,7 +96,7 @@ export default function Regis() {
                 type="submit"
                 className="group relative flex w-full justify-center rounded-md border border-transparent bg-[#c9b3ff] py-2 px-4 text-sm font-medium text-[#1a1a1a] hover:bg-[#a08bff] focus:outline-none focus:ring-2 focus:ring-[#c9b3ff] focus:ring-offset-2"
               >
-                Join the Club
+                Join the Event
               </button>
             </div>
           </form>
