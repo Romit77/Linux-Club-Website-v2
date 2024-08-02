@@ -1,5 +1,4 @@
 "use client";
-import * as React from "react";
 import { Vortex } from "./ui/vortex";
 import { motion } from "framer-motion";
 

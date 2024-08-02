@@ -33,59 +33,11 @@ export default function events() {
                   <Image
                     alt="Event 1"
                     className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="400"
-                    src="/reveal.png"
-                    width="800"
+                    height="1125"
+                    src="/upevent.png"
+                    width="2250"
                     style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Event 2"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="400"
-                    src="/reveal.png"
-                    width="800"
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Event 3"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="400"
-                    src="/reveal.png"
-                    width="800"
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Event 4"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="400"
-                    src="/reveal.png"
-                    width="800"
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    alt="Event 5"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="400"
-                    src="/reveal.png"
-                    width="800"
-                    style={{
-                      objectFit: "contain",
+                      objectFit: "cover",
                     }}
                   />
                 </CarouselItem>
