@@ -1,15 +1,17 @@
 import React from "react";
-import { Hero } from "@/components/Hero";
 import { PoweredBy } from "@/components/component/powered-by";
 import WhyClub from "@/components/component/WhyClub";
-import { Navbar } from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
+import { lazy } from "react";
+
+const Hero = lazy(()=>import("@/components/Hero")) ;
+const Navbar = lazy(()=>import("@/components/component/Navbar")) ;
 
 export default function page() {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero/>
       <PoweredBy />
       <WhyClub />
       <Footer />
