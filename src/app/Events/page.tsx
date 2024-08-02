@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar } from "@/components/component/Navbar";
+import  Navbar  from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { motion } from "framer-motion";
 
