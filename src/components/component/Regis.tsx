@@ -31,7 +31,7 @@ export default function Regis() {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/registration",
+        "/api/registration",
         {
           name,
           email,
