@@ -347,7 +347,6 @@ export function Members() {
                   </motion.p>
                 </div>
               </div>
-
               <div className="flex flex-col items-center justify-start space-y-2">
                 <motion.div
                   className="rounded-full overflow-hidden border border-gray-200 dark:border-gray-850 dark:border-gray-800"
