@@ -1,5 +1,5 @@
 import { Footer } from "@/components/component/footer";
-import { Navbar } from "@/components/component/Navbar";
+import  Navbar  from "@/components/component/Navbar";
 
 export default function RegisLayout({
   children,

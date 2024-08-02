@@ -1,7 +1,7 @@
 "use client";
 
 import ContactUs from "@/components/component/contact";
-import { Navbar } from "@/components/component/Navbar";
+import  Navbar  from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { Toaster, toast } from "sonner";
 import { z } from "zod";

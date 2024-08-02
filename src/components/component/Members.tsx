@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Navbar } from "./Navbar";
+import  Navbar  from "./Navbar";
 import { Footer } from "./footer";
 
-export function Members() {
+export default function Members() {
   return (
     <>
       <Navbar />;
-      <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative  mt-10 ">
+      <div className="h-100vh w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative mt-10 scroll-smooth">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
 
         <div className="container px-4 grid items-center justify-center gap-4 text-center md:px-6">

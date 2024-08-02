@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Navbar } from "@/components/component/Navbar";
+import  Navbar  from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 
 function page() {
