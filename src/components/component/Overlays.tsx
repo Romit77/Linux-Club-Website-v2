@@ -1,10 +1,8 @@
 "use client" ;
 import { useState } from 'react';
-import closeIcon from '@/constants/closeIcon';
-import Image from 'next/image';
 import Link from 'next/link';
 
-const Overlay = () => {
+export default function Overlay() {
   const [showOverlay, setShowOverlay] = useState(true);
 
   const handleClose = () => {
@@ -42,5 +40,3 @@ const Overlay = () => {
     )
   );
 };
-
-export default Overlay;
