@@ -32,9 +32,9 @@ export default function events() {
                 <CarouselItem>
                   <Image
                     alt="Event 1"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="1125"
-                    src="/upevent.png"
+                    className="aspect-[3/1] rounded-lg object-cover w-full"
+                    height="1000"
+                    src="/reveal.png"
                     width="2250"
                     style={{
                       objectFit: "cover",
