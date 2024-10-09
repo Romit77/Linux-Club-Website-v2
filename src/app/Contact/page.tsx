@@ -1,7 +1,6 @@
 "use client";
 
-import ContactUs from "@/components/component/contact";
-import  Navbar  from "@/components/component/Navbar";
+import Navbar from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { Toaster, toast } from "sonner";
 import { z } from "zod";
@@ -17,6 +16,9 @@ export default function Contact() {
   const [message, setMessage] = useState("");
 
   const sendMail = async () => {
+    const loadingToast = toast.loading("Sending message...", {
+      duration: Infinity,
+    });
     try {
       emailschema.parse(UserEmail);
       messageSchema.parse(message);
@@ -29,12 +31,14 @@ export default function Contact() {
       body: JSON.stringify({ UserEmail, message }),
     });
     if (response.ok) {
+      toast.dismiss(loadingToast);
       toast.success(
         "Message sent successfully to our email. We will get back to you soon."
       );
       setUserEmail("");
       setMessage("");
     } else {
+      toast.dismiss(loadingToast);
       toast.error("Failed to send message on email! Please try again later.");
     }
   };
