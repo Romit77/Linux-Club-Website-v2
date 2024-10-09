@@ -17,11 +17,11 @@ export default function Overlay() {
   return (
     showOverlay && (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-        <div className="relative bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+        <div className="relative bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto">
           <div className="mb-2 absolute -top-2 -right-2">
             <button
               onClick={handleClose}
-              className="absolute top-0 right-0 p-2 bg-slate-700 rounded-xl "
+              className="absolute top-2 -left-11 p-1 bg-slate-300 rounded-3xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ export default function Overlay() {
           </p>
           <div className="flex justify-center mt-2">
             <button
-              className="mt-1 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-1"
               onClick={open_form}
             >
               Apply
