@@ -1,10 +1,15 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import  Navbar  from "@/components/component/Navbar";
+import Navbar from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
+import { Button } from "@/components/ui/button";
 
 function page() {
+  function handleClick() {
+    window.location.href = "https://forms.gle/gT2C3dsoRJV2dbXT8";
+  }
+
   return (
     <>
       <Navbar />
@@ -14,7 +19,7 @@ function page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
       >
-        Recruitment Closed for now :)
+        <Button onClick={handleClick}>Join us</Button>
       </motion.div>
       <Footer />
     </>
