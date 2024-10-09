@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
-import  Navbar  from "@/components/component/Navbar";
+import Navbar from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { motion } from "framer-motion";
 
@@ -32,9 +32,9 @@ export default function events() {
                 <CarouselItem>
                   <Image
                     alt="Event 1"
-                    className="aspect-[2/1] w-full rounded-lg object-cover"
-                    height="1125"
-                    src="/upevent.png"
+                    className="aspect-[3/1] rounded-lg object-cover w-full"
+                    height="1000"
+                    src="/reveal.png"
                     width="2250"
                     style={{
                       objectFit: "cover",
@@ -64,7 +64,7 @@ export default function events() {
                   alt="Past Event 1"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/silent.jpg"
+                  src="/Rivals.jpg"
                   width="500"
                 />
                 <div className="bg-white p-4 dark:bg-gray-950 object-contain text-gray-400">
@@ -74,7 +74,7 @@ export default function events() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    Third Eye Quest
+                    College Rivals
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500"
@@ -82,7 +82,7 @@ export default function events() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    AdVITyas &apos;24
+                    Boompanda X Linux Club
                   </motion.p>
                 </div>
               </div>
