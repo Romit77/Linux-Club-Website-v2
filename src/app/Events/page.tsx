@@ -64,7 +64,7 @@ export default function events() {
                   alt="Past Event 1"
                   className="aspect-[5/3] w-full rounded-t-lg object-cover"
                   height="300"
-                  src="/silent.jpg"
+                  src="/Rivals.jpg"
                   width="500"
                 />
                 <div className="bg-white p-4 dark:bg-gray-950 object-contain text-gray-400">
