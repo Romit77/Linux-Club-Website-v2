@@ -9,6 +9,10 @@ export default function Overlay() {
     setShowOverlay(false);
   };
 
+  function open_form(){
+     window.open("https://forms.gle/gT2C3dsoRJV2dbXT8") ;
+  }
+
   return (
     showOverlay && (
       <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -24,17 +28,18 @@ export default function Overlay() {
             </button>
           </div>
           <img
-            src="/upevent.png"
+            src="/club.jpg"
             alt="Event"
-            className="w-full h-48 object-cover rounded"
+            className="w-full h-49 object-cover rounded-md"
           />
-          <h2 className="text-xl font-bold mt-4">Special Event</h2>
-          <p className="mt-2">Join us for an exclusive event. Register now!</p>
-          <Link href={'/regis'}>
-             <button className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-              Register Now
+          <h2 className="text-xl font-bold mt-2 underline text-center">Recuritment Update </h2>
+          <p className="mt-2 text-wrap text-clip text-center">"Join the Linux Club and unlock your potential! Apply now to be part of our dynamic community!!!"</p>
+          <div className="flex justify-center mt-2">
+             <button className="mt-1 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+              onClick={open_form}>
+                Apply
              </button>
-           </Link>
+          </div>
         </div>
       </div>
     )
