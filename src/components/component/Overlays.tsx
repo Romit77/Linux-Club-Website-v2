@@ -21,7 +21,7 @@ export default function Overlay() {
           <div className="mb-2 absolute -top-2 -right-2">
             <button
               onClick={handleClose}
-              className="absolute top-0 right-0 p-2"
+              className="absolute top-0 right-0 p-2 bg-slate-700 rounded-xl "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,13 +43,15 @@ export default function Overlay() {
             src="/club.jpg"
             alt="Event"
             className="w-full h-49 object-cover rounded-md"
+            width={450}
+            height={200}
           />
-          <h2 className="text-xl font-bold mt-2 underline text-center">
+          <h2 className="text-xl font-bold mt-2 underline text-center text-bold text-black">
             Recuritment Update{" "}
           </h2>
-          <p className="mt-2 text-wrap text-clip text-center">
-            `&quot;`Join the Linux Club and unlock your potential! Apply now to
-            be part of our dynamic community`&quot;`
+          <p className="mt-2 text-wrap text-clip text-center text-black text-medium">
+            Join the Linux Club and unlock your potential! Apply now to be part
+            of our dynamic community
           </p>
           <div className="flex justify-center mt-2">
             <button

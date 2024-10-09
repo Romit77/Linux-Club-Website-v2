@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import Image from "next/image";
-import  Navbar  from "@/components/component/Navbar";
+import Navbar from "@/components/component/Navbar";
 import { Footer } from "@/components/component/footer";
 import { motion } from "framer-motion";
 
@@ -74,7 +74,7 @@ export default function events() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    Third Eye Quest
+                    College Rivals
                   </motion.h3>
                   <motion.p
                     className="text-sm text-gray-500"
@@ -82,7 +82,7 @@ export default function events() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    AdVITyas &apos;24
+                    Boompanda X Linux Club
                   </motion.p>
                 </div>
               </div>
