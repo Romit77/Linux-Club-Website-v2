@@ -6,9 +6,9 @@ import { Footer } from "@/components/component/footer";
 import { Button } from "@/components/ui/button";
 
 function page() {
-  function handleClick() {
-    window.location.href = "https://forms.gle/gT2C3dsoRJV2dbXT8";
-  }
+  // function handleClick() {
+  //   window.location.href = "https://forms.gle/gT2C3dsoRJV2dbXT8";
+  // }
 
   return (
     <>
@@ -19,7 +19,8 @@ function page() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4 }}
       >
-        <Button onClick={handleClick}>Join us</Button>
+        {/* <Button onClick={handleClick}>Join us</Button> */}
+        <p>Recruitment Closed for now :)</p>
       </motion.div>
       <Footer />
     </>
